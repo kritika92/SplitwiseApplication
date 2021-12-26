@@ -1,4 +1,4 @@
-#Add Users
+# Add Users #
 ```
 
 pk: id
@@ -14,7 +14,7 @@ responseBody :ListofAllUsers
    [User{id='1', name='kritika', email='kritika@gmail.com', mobileNumber='73847336284'}]
 
 ```
-###Example:
+### Example:
 ```
 POST /add/user/? HTTP/1.1
 Host: localhost:8080
@@ -43,7 +43,7 @@ Postman-Token: e8265aee-850b-4634-8030-8170bfd79037
 }------WebKitFormBoundary7MA4YWxkTrZu0gW-----WebKitFormBoundary7MA4YWxkTrZu0gW--
 ```
 
-#Add expense:
+# Add expense:
 ```
 Method: POST
 endpoint: http://localhost:8080/add/expense/
@@ -69,7 +69,7 @@ requestbody: {
 response:
 Expense{id=1, paidByUserId='2', amount=1000.0, paymentMap='{"1":0.0,"2":0.0}', nameExpense='party', Date='24/12/2021', imgUrl='s3url.com', expenseType=EQUAL}
 ```
-###Example
+### Example
 ```
 POST /add/expense/ HTTP/1.1
 Host: localhost:8080
@@ -124,7 +124,7 @@ Postman-Token: 61745709-1a7b-4be6-8451-4bdf25a42e63
 ------WebKitFormBoundary7MA4YWxkTrZu0gW--
 ```
 
-#Show balance
+# Show balance
 ```
 GET http://localhost:8080/show/balance/?userId=1
 ResponseBody:
