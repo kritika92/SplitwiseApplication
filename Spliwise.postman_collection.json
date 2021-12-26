@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "3dced06d-3e68-4c3d-8b84-47d709ca4da1",
+		"name": "Spliwise",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/add/user/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" :\"2\",\n\t\"name\": \"shivangi\",\n\t\"email\":\"shivangi@gmail.com\",\n\t\"mobileNumber\":\"73847336284\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/add/user/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"add",
+						"user",
+						""
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "kritika",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "kritikagoyal121@gmail.com",
+							"disabled": true
+						},
+						{
+							"key": "mobileNumber",
+							"value": "7382836284",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/add/expense/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"paidByUserId\" :\"1\",\n\t\"amount\": \"1000\",\n\t\"paymentMapModel\":{\"1\": 800, \"2\":200},\n\t\"nameExpense\":\"party\",\n\t\"date\":\"24/12/2021\",\n\t\"imgUrl\":\"s3url.com\",\n\t\"expenseType\":\"EXACT\"\n}\n\n"
+				},
+				"url": {
+					"raw": "http://localhost:8080/add/expense/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"add",
+						"expense",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/show/balance/?userId=1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/show/balance/?userId=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"show",
+						"balance",
+						""
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
